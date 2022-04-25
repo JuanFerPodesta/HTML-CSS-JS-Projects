@@ -1,0 +1,409 @@
+/*  #C32B49
+    #2E1C2B
+    #5C80BC
+    #CAD2C5
+    #FAFAFA*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+.borde {
+  border: 5px solid red;
+}
+
+body {
+  font-family: "Lato";
+  font-weight: 700;
+  color: #2e1c2b;
+  background-color: rgb(202, 211, 197);
+}
+
+header {
+  background-color: #5c80bc;
+  color: #fafafa;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  height: 7.5vh;
+}
+
+.titulo {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+/* inicio */
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-between;
+  height: 92.5vh;
+}
+
+.btn {
+  font-weight: 900;
+  font-size: 20px;
+  color: #fafafa;
+  background-color: #5c80bc;
+  margin-top: 10px;
+}
+
+/* espacios */
+.espacios-lg {
+  padding: 15px;
+  margin: 15px;
+}
+
+.espacios-md {
+  margin: 10px;
+  padding: 10px;
+}
+
+.espacios-sm {
+  padding: 5px;
+  margin: 5px;
+}
+
+.padding-gral {
+  padding: 10px;
+}
+
+.margin-rl {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.resultadosAnteriores {
+  width: 100%;
+  min-height: 50%;
+  background-color: gray;
+  margin-top: 15px;
+  font-size: 5px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #c32b49;
+  border-radius: 10px;
+  background-color: rgba(250, 250, 250, 0.5);
+  padding: 10px;
+}
+
+.partidos {
+  color: #5c80bc;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.2;
+  padding: 2px;
+}
+
+.partidosAnterioresTitulos {
+  color: #5c80bc;
+  font-size: 27px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* slider */
+
+/* me sirve para no dejar scrollear*/
+.carrousel {
+  max-width: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+}
+
+#sectionCarrousel {
+  max-height: 100vh;
+}
+
+.slider-container {
+  height: 93vh;
+  position: relative;
+}
+
+.nroCarta h6 {
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5px;
+  max-height: 8vh;
+  font-size: 10px;
+}
+.scoreboard {
+  font-size: 30px !important;
+  color: #fafafa;
+  background-color: rgba(92, 128, 188, 0.8);
+  border: 2px solid #fafafa;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.scoreboard:hover {
+  color: rgb(92, 128, 188);
+  background-color: #fafafa;
+  border: 2px solid rgb(92, 128, 188);
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  max-height: 90%;
+  display: grid;
+  /* place-items: center; */
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+}
+
+.slideCard {
+  display: flex;
+  flex-direction: column;
+  height: 83vh;
+  max-width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  border: 5px solid rgb(92, 128, 188);
+  border-radius: 3%;
+  background: rgba(92, 128, 188, 0.2);
+}
+
+.slideCard h1 {
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.slideCard h3 {
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.slideCard img {
+  width: auto;
+  max-height: 425px;
+}
+
+.btn-container {
+  height: 7vh;
+  display: flex;
+  font-size: 80px;
+  justify-content: space-around;
+  position: fixed;
+  width: 100vw;
+}
+
+.material-icons {
+  font-size: 30px;
+}
+
+.active-material-icons {
+  color: #5c80bc;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.material-icons:hover {
+  color: #5c80bc;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* sectionResults */
+
+#sectionResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#sectionResults button {
+  text-align: center;
+}
+
+#sectionResults h1,
+#resultadosPartidosAnteriores h1 {
+  color: #4c80bc;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.postersContainer {
+  max-width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.poster {
+  width: 30vw;
+  height: 18vh;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.winner {
+  height: 20%;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #c32b49;
+  border: 2px solid #c32b49;
+  border-radius: 10px;
+  background-color: rgba(250, 250, 250, 0.5);
+}
+
+#sectionMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  text-align: center;
+  min-height: 100%;
+  min-width: 100%;
+  margin-top: 10%;
+}
+
+.sectionMenu h1 {
+  cursor: pointer;
+}
+
+/* animation */
+
+.section-animation {
+  height: 100vh;
+  width: 100%;
+}
+
+.animation {
+  background: red;
+  width: 100%;
+  height: 100%;
+  transition: all 2s linear;
+}
+
+.slide-out-fwd-center {
+  -webkit-animation: slide-out-fwd-center 3s
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: slide-out-fwd-center 3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.salirResultAnte {
+  text-align: center !important;
+  margin: 10px 40% !important;
+}
+
+#btnGuardarSalir {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-2-16 0:31:53
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-out-fwd-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-out-fwd-center {
+  0% {
+    -webkit-transform: translateZ(1);
+    transform: translateZ(1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 1;
+  }
+}
+@keyframes slide-out-fwd-center {
+  0% {
+    -webkit-transform: translateZ(1);
+    transform: translateZ(1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(600px);
+    transform: translateZ(600px);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    width: 400px;
+    margin: 20px auto;
+    border: 5px solid #5c80bc;
+    border-radius: 2px;
+    height: 800px;
+  }
+
+  body section {
+    width: 100%;
+  }
+
+  .section-animation {
+    width: 100%;
+    height: 100%;
+  }
+  .section-animation {
+    width: 100%;
+    height: 100%;
+  }
+
+  #sectionCarrousel {
+    width: 400px;
+    height: 800px;
+  }
+
+  .slider-container {
+    width: 100%;
+    height: 90%;
+  }
+
+  .slideCard {
+    max-height: 80%;
+  }
+
+  .btn-container {
+    width: 400px;
+    height: 10%;
+  }
+
+  .poster {
+    width: 30%;
+    height: calc(30% * 1.25);
+    border: 2px solid #5c80bc;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+}
