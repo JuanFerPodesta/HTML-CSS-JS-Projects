@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-family: "Raleway", sans-serif;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+select {
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+textarea {
+  font-family: "Raleway", sans-serif;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+}
+
+/* header */
+
+header {
+  background: #1976d2;
+  height: 10vh;
+}
+
+header h1 {
+  color: #fafafa;
+}
+
+/* end header */
+
+/* section */
+/* index.html */
+section {
+  min-height: 80vh;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.section-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-flex h3 {
+  font-weight: 700;
+  font-size: 35px;
+  color: #bdbdbd;
+}
+
+.cara-triste {
+  font-size: 150px;
+  color: #bdbdbd;
+}
+
+/* adding-items.html */
+.section-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #bbdefb;
+  border-radius: 5px;
+}
+
+.section-form button {
+  align-self: flex-end;
+  font-family: inherit;
+}
+
+/* section cargados */
+
+.list-group-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  border-bottom: 2px solid #bdbdbd;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: left;
+  padding-bottom: 3px;
+}
+
+.list-group-item .texto {
+  text-align: justify;
+  min-width: 50%;
+  margin-left: 10px;
+}
+
+.edit-btn {
+  color: green;
+}
+.edit-btn:hover {
+  color: gray;
+}
+.delete-btn {
+  color: red;
+}
+.delete-btn:hover {
+  color: gray;
+}
+
+.list-btn {
+  color: blue;
+}
+.list-btn:hover {
+  color: gray;
+}
+
+.btn-container {
+  margin-left: auto;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.lista {
+  color: #1976d2;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #f1f1f1;
+  border: 2px solid gray;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.underline {
+  text-decoration: underline;
+  display: inline;
+}
+
+.flexRowListasAnteriores {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flexRowListasAnteriores h5 {
+  margin-right: auto;
+}
+
+.flexRowListasAnteriores button {
+  margin-left: 3px;
+}
+
+.listBtn {
+  color: #1976d2;
+}
+
+/* end section */
+
+/* sectionItemsCargados */
+
+.itemsContenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 700;
+  border: 5px solid black;
+  text-align: center;
+  min-height: 50vh;
+}
+
+.itemIcono {
+  width: 100%;
+  border-bottom: 2px solid #bdbdbd;
+  font-size: 80px;
+}
+
+.itemTitulo {
+  font-size: 50px;
+  border-bottom: 2px solid #bdbdbd;
+  width: 100%;
+}
+
+.itemDescripcion {
+  font-size: 20px;
+  width: 100%;
+  height: 150px;
+  text-align: left;
+}
+/* footer */
+
+footer {
+  height: 10vh;
+  background: #fafafa;
+}
+
+footer a {
+  text-decoration: none;
+}
+.footer-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 50px;
+  max-height: 100%;
+  color: #1976d2;
+}
+
+/*end footer*/
+
+/* espacios */
+
+.padding-lg {
+  padding: 15px;
+}
+
+.margin-lg {
+  margin: 15px;
+}
+
+.padding-md {
+  padding: 10px;
+}
+
+.margin-md {
+  margin: 10px;
+}
+
+.padding-sm {
+  padding: 5px;
+}
+
+.margin-sm {
+  margin: 5px;
+}
+
+/* end espacios */
+
+/* borde */
+
+.hidden {
+  display: none;
+}
+
+.botones {
+  text-align: center;
+  background-color: #1976d2;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.botonesFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 140px;
+}
+
+/* alert */
+.alert {
+  margin-bottom: 1rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+}
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+.alert-success {
+  color: #155724;
+  background: #d4edda;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    max-width: 25%;
+    max-height: 75vh;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- material icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- fa icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="padding-lg">
+      <h1 class="padding-sm">Lista de Compras</h1>
+    </header>
+    <!-- section inicio -->
+    <section id="sectionInicio" class="padding-lg">
+      <div class="section-flex padding-lg">
+        <h3 class="padding-md">
+          No tienes ninguna lista de compras!
+        </h3>
+        <i class="material-icons padding-md cara-triste">
+          sentiment_dissatisfied
+        </i>
+      </div>
+    </section>
+    <!-- section carga -->
+    <section id="sectionCarga" class="padding-lg hidden">
+      <div class="section-form padding-sm margin-md">
+        <input
+          type="text"
+          placeholder="título"
+          class="padding-sm margin-md"
+          id="txtTitulo"
+          required=""
+        />
+
+        <select
+          id="items"
+          name="items"
+          class="padding-sm margin-md"
+          required=""
+        >
+          <option value="🍎">🍎 | Frutas</option>
+          <option value="🥕">🥕 | Verduras</option>
+          <option value="🥖">🥖 | Pan</option>
+          <option value="🥛">🥛 | Lacteos</option>
+          <option value="💚">💚 | Dietética</option>
+          <option value="🍾">🍾 | Bebidas</option>
+          <option value="🔌">🔌 | Electrónica</option>
+          <option value="🍖">🍖 | Fiambres</option>
+          <option value="🥩">🥩 | Carnes</option>
+          <option value="🚽">🚽 | Limpieza</option>
+          <option value="💅">💅 | Limpieza Personal</option>
+        </select>
+
+        <textarea
+          name="message"
+          rows="10"
+          cols="30"
+          class="padding-lg margin-md"
+          placeholder="Descripcion"
+          id="txtDescription"
+          required=""
+        ></textarea>
+        <button id="addBtn" class="padding-sm margin-md botones">Agregar</button>
+      </div>
+    </section>
+    
+      <!-- section cargados -->
+      <section id="sectionCargados" class="sectionCargados hidden">
+        <p class="alert"></p>
+      <div class="contenedor" id="contenedor">
+        <div class="listContainer" id="listContainer"></div>
+      </div>
+      <button id="returnBtn" class="padding-sm margin-md botones">Seguir Agregando</button>
+      <button id="saveBtn" class="padding-sm margin-md botones">Guardar Lista</button>
+      </div>
+    </section>
+    
+    <!-- section items cargados -->
+      <section id="sectionItemsCargados" class="hidden">
+      <div class="itemsContenedor margin-md padding-md" id="itemsContenedor">
+          
+      </div>
+      <div class="botonesFlex padding-md">
+      <button id="returnBtnItemsCargados" class="padding-sm botones">Seguir Agregando</button>
+      <button id="returnBtnSectionCargados" class="padding-sm  botones">Volver</button>
+      </div>
+    </section>
+
+    <!-- section guardados -->
+    <section id="sectionGuardados" class="sectionGuardados hidden">
+    </section>
+    <!-- section listados anteriores -->
+    <section id="sectionListadosAnteriores" class="sectionListadosAnteriores hidden">
+    </section>
+    <!-- section items listados anteriores -->
+    <section id="itemsListadosAnteriores" class="hidden">
+      <div class="itemsContenedor margin-md padding-md" id="itemsListadosAnterioresContenedor">
+          
+      </div>
+      
+      <div class="botonesFlex padding-md">
+      <button id="returnBtnSectionListadosAnteriores" class="padding-sm  botones">Volver</button>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+       <div>
+      <a href="#"></a>
+        <i class="material-icons padding-sm footer-btn" id="addListBtn">add_circle</i>
+      </a>
+      </div>
+      
+      <a href="#">
+        <i class="material-icons padding-sm footer-btn hidden" id="footerBtn">arrow_back_ios_new</i>
+      </a>
+    </footer>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>
