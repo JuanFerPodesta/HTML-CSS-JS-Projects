@@ -291,9 +291,9 @@ footer a {
   background: #d4edda;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   body {
-    max-width: 25%;
+    max-width: 33%;
     max-height: 75vh;
     margin: 0 auto;
   }
