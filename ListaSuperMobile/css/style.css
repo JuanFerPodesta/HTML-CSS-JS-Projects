@@ -293,8 +293,11 @@ footer a {
 
 @media screen and (min-width: 850px) {
   body {
-    max-width: 33%;
-    max-height: 75vh;
+    width: 480px;
+    max-height: 66%;
     margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow-y: hidden;
   }
 }
