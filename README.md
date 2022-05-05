@@ -9,11 +9,11 @@ Links to projects:
  
 * [QuienEligeLaPeli](https://quieneligelapeli.web.app/):
   - In this project I want to show how I use:
-   > - LocalStorage API
-   > - Promises
-   > - Async / Await
-   > - Fetch
-   > - I use omdb API to show movies data.
+    > - LocalStorage API
+    > - Promises
+    > - Async / Await
+    > - Fetch
+    > - I use omdb API to show movies data.
    
    
  
