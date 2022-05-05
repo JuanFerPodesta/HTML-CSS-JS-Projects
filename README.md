@@ -13,7 +13,7 @@ Links to projects:
     > - Promises
     > - Async / Await
     > - Fetch
-    > - API Rest Requests *(ttps://www.omdbapi.com/)*.
+    > - API Rest Requests *(https://www.omdbapi.com/)*.
    
    
  
