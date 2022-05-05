@@ -13,7 +13,7 @@ Links to projects:
     > - Promises
     > - Async / Await
     > - Fetch
-    > - I use omdb API to show movies data.
+    > - API Rest Requests *(ttps://www.omdbapi.com/)*.
    
    
  
