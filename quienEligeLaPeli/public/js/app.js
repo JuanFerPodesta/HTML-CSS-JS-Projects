@@ -119,6 +119,7 @@ const posterImage = document.querySelectorAll(".posterImage");
 const frase = document.getElementById("frase");
 const cardPreviousMatches = document.getElementById("cardPreviousMatches");
 const previousMatches = document.getElementById("previousMatches");
+const alert = document.querySelector(".alert");
 
 localStorage.length !== 0
   ? almacenadosEnLocalStorage()
@@ -126,6 +127,9 @@ localStorage.length !== 0
 
 // eventos de botones
 btnPlay.addEventListener("click", function () {
+  if (jugador1.value === `` || jugador2.value === ``) {
+    return displayAlert("Nombres de los jugadores ???", "danger");
+  }
   completarNombresJugadores(jugador1, jugador2);
   currentKey = generarKey(jugador1, jugador2);
   ocultar(screenInicio);
@@ -390,4 +394,14 @@ function completarResultadosDesdeInicio(array, array2) {
   posterImage.forEach(function (poster, index) {
     poster.style.backgroundImage = `url(${array2[index].poster})`;
   });
+}
+
+// alert
+function displayAlert(text, action) {
+  alert.textContent = text;
+  alert.classList.add(`alert-${action}`);
+  setTimeout(function () {
+    alert.textContent = "";
+    alert.classList.remove(`alert-${action}`);
+  }, 1000);
 }
